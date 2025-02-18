@@ -1039,7 +1039,10 @@ html {
     width: unset;
   } 
   .pos-relative{
-    position: relative;
+    position: relative !important;
+  }
+  .pos-absolute{
+    position: absolute !important;
   }
   
   .box-slide-abt3 .tapet{
