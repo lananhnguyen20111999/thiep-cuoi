@@ -86,6 +86,168 @@
                 font-weight: bolder;
                 font-family: serif;
             }
+            @keyframes slideInLeft {
+                from {
+                    transform: translateX(-100%);
+                }
+                to {
+                    transform: translateX(-20%);
+                }
+            }
+
+            @keyframes slideInRight {
+                from {
+                    transform: translateX(100%);
+                }
+                to {
+                    transform: translateX(20%);
+                }
+            }
+            #w-1j4sk2pp {
+                top: 0px;
+                left: 520px;
+                width: 520px;
+                height: 800px;
+                z-index: 2;
+            }
+
+            #w-1j4sk2pp .image-block-css {
+                border-color: rgba(229, 231, 235, 1);
+                border-style: solid;
+                border-width: 0px;
+                position: absolute;
+                z-index: null;
+            }
+
+            #w-1j4sk2pp .image-background {
+                width: 520px;
+                height: 100vh;
+                top: 0px;
+                left: 0px;
+                background: center center/ cover no-repeat scroll content-box border-box url("/uploads/contact/5397c85e01e68520b6e686acfb8f4b71fc813f563e456d159b222a3c.png");
+                --type: 0;
+            }
+
+            #w-1j4sk2pp .image-background-compare {
+                background: undefined;
+                clip: rect(0, 210px, 800px, 0);
+                --type: 0;
+            }
+
+            #w-lra9lkfk {
+                top: 0px;
+                left: -520px;
+                width: 520px;
+                height: 800px;
+                z-index: 2;
+            }
+
+            #w-lra9lkfk .image-block-css {
+                border-color: rgba(229, 231, 235, 1);
+                border-style: solid;
+                border-width: 0px;
+                position: absolute;
+                z-index: null;
+            }
+
+            #w-lra9lkfk .image-background {
+                width: 520px;
+                height: 100vh;
+                top: 0px;
+                left: 0px;
+                background: center center/ cover no-repeat scroll content-box border-box url("/uploads/contact/44e9347bb12368a07e646ad45939e6086fc1ce3b2b39c28663352c01.png");
+                --type: 0;
+            }
+
+            #w-lra9lkfk .image-background-compare {
+                background: undefined;
+                clip: rect(0, 210px, 800px, 0);
+                --type: 0;
+            }
+
+            #w-1j4sk2pp.animation {
+                transform: perspective(1000px);
+            }
+
+            #w-1j4sk2pp.animation .image-block-css {
+                animation-name: slideInLeft;
+                -webkit-animation-name: slideInLeft;
+                animation-delay: 0s;
+                -webkit-animation-delay: 0s;
+                animation-iteration-count: 1;
+                -webkit-animation-iteration-count: 1;
+                animation-duration: 8s;
+                -webkit-animation-duration: 8s;
+            }
+
+            #w-lra9lkfk.animation {
+                transform: perspective(2000px);
+            }
+
+            #w-lra9lkfk.animation .image-block-css {
+                animation-name: slideInRight;
+                -webkit-animation-name: slideInRight;
+                animation-delay: 0s;
+                -webkit-animation-delay: 0s;
+                animation-iteration-count: 1;
+                -webkit-animation-iteration-count: 1;
+                animation-duration: 8s;
+                -webkit-animation-duration: 8s;
+            }
+            .full-mask-size {
+                -webkit-mask-size: 100% 100%
+            }
+
+            .mask-position {
+                -webkit-mask-position: 0% 0%
+            }
+            @keyframes zoomIn {
+                0% {
+                    transform: scale(0); /* Bắt đầu từ kích thước 0 */
+                    opacity: 0; /* Bắt đầu với độ trong suốt 0 */
+                }
+                50% {
+                    transform: scale(1.05); /* Phóng to hơn một chút */
+                    opacity: 1; /* Độ trong suốt đạt 1 */
+                }
+                100% {
+                    transform: scale(1); /* Đưa về kích thước ban đầu */
+                    opacity: 1; /* Độ trong suốt đạt 1 */
+                }
+            }
+            #w-kb6stlwe {
+                top: 80vh;
+                left: 57px;
+                perspective: 1000px;
+                width: 413px;
+                height: 60px;
+            }
+            #w-kb6stlwe .text-block-css {
+                /* border-color: rgba(229, 231, 235, 1);
+                border-style: solid; */
+                color: #a31e23;
+                font-family: "Great Vibes", serif;
+                font-size: 50px;
+                text-align: center;
+                text-shadow: 0px 4px 4px rgba(255, 255, 255, 1);
+            }
+
+            #w-kb6stlwe > div {
+                transform: rotate(0deg) perspective(1000px);
+            }
+            #w-kb6stlwe.animation {
+                transform: perspective(1000px);
+            }
+            #w-kb6stlwe.animation .text-block-css {
+                animation-name: zoomIn;
+                -webkit-animation-name: zoomIn;
+                animation-delay: 0s;
+                -webkit-animation-delay: 0s;
+                animation-iteration-count: 1;
+                -webkit-animation-iteration-count: 1;
+                animation-duration: 4s;
+                -webkit-animation-duration: 4s;
+            }
             @media (max-width: 600px) {
                 .text-box {
                     font-size: 16px;
@@ -94,12 +256,34 @@
         </style>
         <link rel="stylesheet" type="text/css" href="template-thiep/thiep-cuoi-1/css/sweetalert.css">
         <link rel="stylesheet" type="text/css" href="template-thiep/thiep-cuoi-1/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     </head> 
     <body>
         <div id="app" text_alert_rsvp="Xin cảm ơn phản hồi của bạn!" alert_pls_name="Vui lòng nhập Tên!" send_text_alert_rsvp="Gửi lời nhắn hoặc lời chúc" btn_send_mb="Gửi đi">
             <div class="box-tsimple-online">
-                <div class="cover">
-                    <img src="uploads/contact/coverGif.gif">
+                <div class="pos-relative" style="width: 100%; max-width: 520px; overflow: hidden">
+                    <div id="w-1j4sk2pp" class="com-image-block pos-absolute animation">
+                        <div class="image-block-css pos-relative w-full h-full full-mask-size mask-position">
+                            <div class="image-background pos-absolute"></div>
+                        </div>
+                    </div>
+                    <div id="w-lra9lkfk" class="com-image-block pos-absolute animation">
+                        <div class="image-block-css pos-relative w-full h-full full-mask-size mask-position">
+                            <div class="image-background pos-absolute"></div>
+                        </div>
+                    </div>
+                    <div id="w-kb6stlwe" class="com-text-block pos-absolute animation">
+                        <div class="w-full h-full ">
+                            <div class="text-block">
+                                <h1 class="text-block-css w-full">Văn Đoàn &amp; </br> Khánh Linh &nbsp;</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cover">
+                        <img src="uploads/contact/coverGif.gif">
+                    </div>
                 </div>
                 <div class="box-ab-if mb-20 mt-20">
                     <!-- theme ab 3 -->
@@ -121,7 +305,7 @@
                                                 <div class="flex-dx">
                                                     <div class="img text-center pos-relative">
                                                         <!-- <img src="template-thiep/thiep-cuoi-1/images/bride.jpg"> -->
-                                                        <img src="uploads/contact/66c6a1f80eb13.png">
+                                                        <img src="uploads/contact/chu-re.jpg">
                                                         <div class="tapet">
                                                             <img src="template-thiep/thiep-cuoi-1/images/tape1.png">
                                                         </div>
@@ -160,7 +344,7 @@
                                                 <div class="flex-dx">
                                                     <div class="img text-center pos-relative">
                                                         <!-- <img src="template-thiep/thiep-cuoi-1/images/groom.jpg"> -->
-                                                        <img src="uploads/contact/66c6a1f80f4e8.png">
+                                                        <img src="uploads/contact/co-dau.jpg">
                                                         <div class="tapet">
                                                             <img src="template-thiep/thiep-cuoi-1/images/tape1.png">
                                                         </div>
@@ -217,7 +401,7 @@
                                                 <div class="flex-dx">
                                                     <div class="img text-center pos-relative">
                                                         <!-- <img src="template-thiep/thiep-cuoi-1/images/bride.jpg"> -->
-                                                        <img src="uploads/contact/66c6a1d1c5c10.png">
+                                                        <img src="uploads/contact/lan-dau-gap-mat.jpg">
                                                         <div class="tapet">
                                                             <img src="template-thiep/thiep-cuoi-1/images/tape1.png">
                                                         </div>
@@ -259,7 +443,7 @@
                                                 <div class="flex-dx">
                                                     <div class="img text-center pos-relative">
                                                         <!-- <img src="template-thiep/thiep-cuoi-1/images/bride.jpg"> -->
-                                                        <img src="uploads/contact/66c6a1d1c7691.png">
+                                                        <img src="uploads/contact/hen-ho.jpg">
                                                         <div class="tapet">
                                                             <img src="template-thiep/thiep-cuoi-1/images/tape1.png">
                                                         </div>
@@ -300,7 +484,7 @@
                                                 <div class="flex-dx">
                                                     <div class="img text-center pos-relative">
                                                         <!-- <img src="template-thiep/thiep-cuoi-1/images/bride.jpg"> -->
-                                                        <img src="uploads/contact/66c6a1d1c8a24.png">
+                                                        <img src="uploads/contact/cau-hon.jpg">
                                                         <div class="tapet">
                                                             <img src="template-thiep/thiep-cuoi-1/images/tape1.png">
                                                         </div>
@@ -316,7 +500,7 @@
                                                     <p>
                                                         <span class="color-main name">Giây Phút Cầu Hôn</span>
                                                     </p>
-                                                    <span>5 năm bên nhau không phải là quãng thời gian quá dài, nhưng đủ cho chúng ta nhận ra được rất nhiều điều. Chúng ta từ 2 con người xa lạ mà bước vào cuộc đời nhau. Và giờ đây chúng ta tiếp tục cùng nhau sang trang mới. Giây phút anh ngỏ lời “Làm vợ anh nhé!”, em đã nguyện ý đời này, đi đâu cũng được, miễn là cùng anh.
+                                                    <span>2 năm bên nhau không phải là quãng thời gian quá dài, nhưng đủ cho chúng ta nhận ra được rất nhiều điều. Chúng ta từ 2 con người xa lạ mà bước vào cuộc đời nhau. Và giờ đây chúng ta tiếp tục cùng nhau sang trang mới. Giây phút anh ngỏ lời “Làm vợ anh nhé!”, em đã nguyện ý đời này, đi đâu cũng được, miễn là cùng anh.
                                             </span>
                                                 </div>
                                                 <div class="line3">
@@ -341,7 +525,7 @@
                                                 <div class="flex-dx">
                                                     <div class="img text-center pos-relative">
                                                         <!-- <img src="template-thiep/thiep-cuoi-1/images/bride.jpg"> -->
-                                                        <img src="uploads/contact/66c6a1d1c9892.png">
+                                                        <img src="uploads/contact/ngay-chung-doi.jpg">
                                                         <div class="tapet">
                                                             <img src="template-thiep/thiep-cuoi-1/images/tape1.png">
                                                         </div>
@@ -388,16 +572,34 @@
                     <div class="slide-box">
                         <div class="autoplay">
                             <div>
-                                <img src="uploads/contact/customer/66b6e9fbad828-pexels-tr-n-long-3093985-13955165.jpg" alt="">
+                                <img src="uploads/contact/customer/LY_05787.jpg" alt="">
                             </div>
                             <div>
-                                <img src="uploads/contact/customer/66b6e9e3e3e7b-pexels-tr-n-long-3093985-13955114.jpg" alt="">
+                                <img src="uploads/contact/customer/LY_06002.jpg" alt="">
                             </div>
                             <div>
-                                <img src="uploads/contact/customer/66b6e9cf9706f-pexels-tr-n-long-3093985-13955123.jpg" alt="">
+                                <img src="uploads/contact/customer/LY_05867.jpg" alt="">
                             </div>
                             <div>
-                                <img src="uploads/contact/customer/66b6e9bbd99cc-pexels-tr-n-long-3093985-13955129.jpg" alt="">
+                                <img src="uploads/contact/customer/LY_05877.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="uploads/contact/customer/LY_05678.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="uploads/contact/customer/LY_05641.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="uploads/contact/customer/LY_05639.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="uploads/contact/customer/LY_05367.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="uploads/contact/customer/LY_05380.jpg" alt="">
+                            </div>
+                            <div>
+                                <img src="uploads/contact/customer/LY_05015.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -639,7 +841,18 @@
             } else {
                 optionElement.textContent = "";
             }
+            document.addEventListener('DOMContentLoaded', function () {
+                const imageBlockLeft = document.getElementById('w-1j4sk2pp');
+                const imageBlockRight = document.getElementById('w-lra9lkfk');
 
+                imageBlockLeft.addEventListener('animationend', function () {
+                    imageBlockLeft.classList.add('hidden');
+                });
+
+                imageBlockRight.addEventListener('animationend', function () {
+                    imageBlockRight.classList.add('hidden');
+                });
+            });
         </script>
     </body>
 </html>
